@@ -33,3 +33,14 @@ code {
 .resetbtn {
   background-color: yellow;
 }
+.todo_input {
+  border: 2px solid black;
+}
+
+.todo_btn {
+  background-color: green;
+  margin-left: 5px;
+  color: white;
+  width: 100px;
+  height: 25px;
+}
