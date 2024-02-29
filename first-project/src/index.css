@@ -12,7 +12,11 @@ code {
     monospace;
 }
 
-.buttons {
+/*
+this css is  for timer component
+*/
+
+/* .buttons {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -33,6 +37,14 @@ code {
 .resetbtn {
   background-color: yellow;
 }
+
+
+/*
+this css is  for todo component
+*/
+
+/*
+
 .todo_input {
   border: 2px solid black;
 }
@@ -61,4 +73,40 @@ code {
   display: flex;
   justify-content: space-between;
   color: white;
+} */
+
+/*
+this css is  for form component
+*/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+.form > input {
+  width: 250px;
+  margin-top: 5px;
+  border: 1px solid black;
+}
+.form > label {
+  align-self: flex-start;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.form_submit_btn {
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.form_list {
+  font-weight: 700;
+  background-image: linear-gradient(to bottom right, black, white);
+  display: flex;
+  color: white;
+  align-items: flex-start;
+  flex-direction: column;
 }
