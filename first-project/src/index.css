@@ -37,10 +37,28 @@ code {
   border: 2px solid black;
 }
 
-.todo_btn {
+.todos_btn {
   background-color: green;
   margin-left: 5px;
   color: white;
   width: 100px;
   height: 25px;
+}
+.todo_list {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  width: 50%;
+  height: auto;
+}
+
+.todo_listing {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+.each_list {
+  display: flex;
+  justify-content: space-between;
+  color: white;
 }

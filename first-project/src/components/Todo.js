@@ -1,13 +1,19 @@
 import { useState } from "react";
 
 const Todo = () => {
-  const [todos, setTodos] = useState(["hey there"]);
+  const [todos, setTodos] = useState(["hello"]);
   const [input, setInput] = useState("");
 
   const handler = () => {
     const newTodos = [...todos, input];
     setTodos(newTodos);
   };
+  const deletehandler = (index) => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
+    setTodos(newTodos);
+  };
+
   return (
     <div>
       <div>
@@ -15,19 +21,19 @@ const Todo = () => {
           className="todo_input"
           onChange={(e) => setInput(e.target.value)}
         ></input>
-        <button
-          className="todo_btn"
-          onClick={() => {
-            handler;
-          }}
-        >
+        <button className="todos_btn" onClick={handler}>
           add
         </button>
       </div>
-      <div>
-        <ul style={{ listStyle: "none" }}>
+      <div className="todo_listing">
+        <ul className="todo_list" style={{ listStyle: "none" }}>
           {todos.map((todo) => (
-            <li>{todo}</li>
+            <li className="each_list">
+              {todo}
+              <button className="todo-btn" onClick={deletehandler}>
+                delete
+              </button>
+            </li>
           ))}
         </ul>
       </div>
