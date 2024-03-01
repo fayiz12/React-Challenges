@@ -79,7 +79,7 @@ this css is  for todo component
 this css is  for form component
 */
 
-.form {
+/* .form {
   display: flex;
   flex-direction: column;
   padding-left: 30px;
@@ -109,4 +109,20 @@ this css is  for form component
   color: white;
   align-items: flex-start;
   flex-direction: column;
+} */
+
+/*
+this is for NumberOfClick component
+*/
+
+.click-root {
+  color: white;
+  font-weight: 800;
+  width: 100%;
+  height: 400px;
+  background-color: salmon;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

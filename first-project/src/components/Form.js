@@ -33,6 +33,7 @@ const Form = () => {
       </div>
       <div>
         <ul className="form_list" style={{ listStyle: "none" }}>
+          <h4>The request has send successfully by the following data</h4>
           <li>{user.name}</li>
           <li>{user.fullname}</li>
           <li>{user.age}</li>
