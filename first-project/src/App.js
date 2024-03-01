@@ -1,5 +1,7 @@
 import "./App.css";
-import ProgressBar from "./components/ProgressBar";
+import Advice from "./components/Advice";
+
+// import ProgressBar from "./components/ProgressBar";
 // import NumberOfClick from "./components/NumberOfClicks";
 // import Todo from "./components/Todo";
 // import Timer from "./components/Timer";
@@ -12,7 +14,8 @@ function App() {
       {/* <Todo /> */}
       {/* <Form /> */}
       {/* <NumberOfClick /> */}
-      <ProgressBar />
+      {/* <ProgressBar /> */}
+      <Advice />
     </div>
   );
 }
