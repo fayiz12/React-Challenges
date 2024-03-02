@@ -1,6 +1,6 @@
 import "./App.css";
-import Advice from "./components/Advice";
-
+import Color from "./components/Color";
+// import Advice from "./components/Advice";
 // import ProgressBar from "./components/ProgressBar";
 // import NumberOfClick from "./components/NumberOfClicks";
 // import Todo from "./components/Todo";
@@ -15,7 +15,8 @@ function App() {
       {/* <Form /> */}
       {/* <NumberOfClick /> */}
       {/* <ProgressBar /> */}
-      <Advice />
+      {/* <Advice /> */}
+      <Color />
     </div>
   );
 }

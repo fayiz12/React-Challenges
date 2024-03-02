@@ -180,7 +180,7 @@ this is the  css for Progress Bar
 /*
 Random Advice generator
 */
-
+/* 
 .Advice-root {
   background-image: url("../utils/background.jpg");
   width: 100%;
@@ -214,4 +214,31 @@ Random Advice generator
   font-weight: 900;
   border-radius: 12px;
   border: 1px solid white;
+} */
+
+/*
+this is for color generator
+*/
+
+.color-input {
+  border: 1px solid black;
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}
+
+.color-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.color-root > label {
+  font-weight: 900;
+  color: aqua;
 }
