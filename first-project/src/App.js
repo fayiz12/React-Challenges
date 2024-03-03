@@ -1,5 +1,5 @@
-import "./App.css";
-import WeatherApp from "./components/WeatherApp";
+// import "./App.css";
+// import WeatherApp from "./components/WeatherApp";
 // import Color from "./components/Color";
 // import Advice from "./components/Advice";
 // import ProgressBar from "./components/ProgressBar";
@@ -18,7 +18,7 @@ function App() {
       {/* <ProgressBar /> */}
       {/* <Advice /> */}
       {/* <Color /> */}
-      <WeatherApp />
+      {/* <WeatherApp /> */}
     </div>
   );
 }

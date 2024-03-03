@@ -246,3 +246,32 @@ this is for color generator
 /*
 this is for weather app
 */
+
+.climate-root-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.climate-parent-card {
+  border-radius: 30px;
+  border: 1px solid black;
+  background-image: linear-gradient(to bottom right, gray, white);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  height: 150px;
+}
+.climate-temp {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+}
+
+.sunny {
+  width: 30px;
+  height: 30px;
+}
