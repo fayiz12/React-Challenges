@@ -1,24 +1,19 @@
-// import "./App.css";
-// import WeatherApp from "./components/WeatherApp";
-// import Color from "./components/Color";
-// import Advice from "./components/Advice";
-// import ProgressBar from "./components/ProgressBar";
-// import NumberOfClick from "./components/NumberOfClicks";
-// import Todo from "./components/Todo";
-// import Timer from "./components/Timer";
-// import Form from "./components/Form";
-
+import GamePage from "./components/diceGame/GamePage";
+import Landing from "./components/diceGame/Landing";
+import {useState} from "react"
 function App() {
+  const [toggle,setToggle]=useState(true)
+
+  const toggleGamePlay=()=>{
+    setToggle((prev)=>!prev)
+  }
   return (
     <div className="App">
-      {/* <Timer /> */}
-      {/* <Todo /> */}
-      {/* <Form /> */}
-      {/* <NumberOfClick /> */}
-      {/* <ProgressBar /> */}
-      {/* <Advice /> */}
-      {/* <Color /> */}
-      {/* <WeatherApp /> */}
+      {
+        toggle ? <Landing toggle={toggleGamePlay}/>:<GamePage/>
+      }
+      
+      
     </div>
   );
 }
