@@ -66,7 +66,9 @@ const GamePage = () => {
           onClick={() => randomNum(1, 7)}
         ></img>
         <h3>Click On Dice To Roll </h3>
-        <button className="Game-reset">Reset Score</button>
+        <button className="Game-reset" onClick={() => setScore(0)}>
+          Reset Score
+        </button>
         <button className="Game-rule" onClick={() => setShowRules(!showRules)}>
           Show Rules
         </button>
