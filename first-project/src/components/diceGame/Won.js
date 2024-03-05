@@ -1,7 +1,7 @@
 const Lose = () => {
   return (
     <div className="win">
-      <h1>YOU WON</h1>
+      <h1>YOU WON THE GAME</h1>
     </div>
   );
 };
