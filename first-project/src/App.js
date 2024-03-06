@@ -1,19 +1,26 @@
-import GamePage from "./components/diceGame/GamePage";
-import Landing from "./components/diceGame/Landing";
-import {useState} from "react"
+import PortalDemo from "./components/PortaDemo";
+import { useState } from "react";
 function App() {
-  const [toggle,setToggle]=useState(true)
-
-  const toggleGamePlay=()=>{
-    setToggle((prev)=>!prev)
-  }
+  //this is a dice game
+  // const [toggle,setToggle]=useState(true)
+  // const toggleGamePlay=()=>{
+  //   setToggle((prev)=>!prev)
+  // }
+  // return (
+  //   <div className="App">
+  //     {
+  //       toggle ? <Landing toggle={toggleGamePlay}/>:<GamePage/>
+  //     }
+  //   </div>
+  // );
+  const [show, setShow] = useState(false);
+  const handler = () => {
+    setShow(!show);
+  };
   return (
-    <div className="App">
-      {
-        toggle ? <Landing toggle={toggleGamePlay}/>:<GamePage/>
-      }
-      
-      
+    <div>
+      {show ? <h1>hello</h1> : null}
+      <PortalDemo handler={handler} />
     </div>
   );
 }
